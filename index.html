@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Insure landing page</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none; padding: 5px;}
+  </style>
+</head>
+<body>
+<div class="header">
+  <nav class="navbar">
+    <div class="parent">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <ul class="nav-list" id="nav-List">
+      <li><a href="#">How we work</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#"> Account</a></li>
+      <li><a href="#"> View plans</a></li>
+    </ul>
+    <div class="menu" id="toggle-Button">
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+    </div>
+  </nav>
+</div>
+
+<div id="biggest-container">
+   <main class="main">
+      <div class="main-div">
+         <h1 class="top"> Humanizing <span class="block-of-text">your insurance.</span></h1>
+          <section class="para">
+            Get your life insurance coverage easier and faster. We blend our expertise 
+            and technology to help you find the plan that’s right for you. Ensure you 
+            and your loved ones are protected.  
+          </section>
+          <section id="move">
+            <a href="#"> View plans</a>
+          </section>
+      </div>
+
+      <div class="main-div2">
+        <article class="mini-main-div2">
+         <!-- Empty for background image -->
+        </article>
+         <!--- <img src="images/image-intro-desktop.jpg" alt="" id="imgg"> --> 
+      </div>
+   </main>
+        <div class="empty-but-white-div">
+
+        </div>
+</div>  
+
+<div id="article-container">
+  <div class="headerr">
+    <h2> We’re different</h2>  
+  </div>
+  <div id="article">
+    <article>
+      <figure>
+        <img src="images/icon-snappy-process.svg" alt="">
+        <figcaption> Snappy Process</figcaption>
+      </figure>
+    <section class="block-of-texts">
+      Our application process can be completed in minutes, not hours. Don’t get 
+      stuck filling in tedious forms.
+    </section>
+    </article>
+
+    <article>
+       <figure>
+        <img src="images/icon-affordable-prices.svg" alt="">
+        <figcaption> Affordable Prices</figcaption>
+       </figure>
+       <section class="block-of-texts">
+        We don’t want you worrying about high monthly costs. Our prices may be low, 
+        but we still offer the best coverage possible.
+       </section>
+    </article>
+
+    <article>
+        <figure>
+          <img src="images/icon-people-first.svg" alt="">
+          <figcaption>People First</figcaption>
+        </figure>
+        <section class="block-of-texts">
+          Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+          sure you’re covered when you need it.        
+        </section>
+    </article>
+
+  </div>
+</div>
+
+ <div id="another-container">
+  <div class="only-text-and-link">
+    <section> 
+      <p> Find out more</p> 
+      <p class="move-left-text"> about how we <span class="hide-for-mobile">work</span></p>
+      <p class="hide-for-desktop">work</p>
+    </section>
+  </div>
+
+  <div class="only-text-and-link2">
+    <section class="link">
+      <a href="#"> How we work</a>
+    </section>
+  </div>
+ </div>
+
+<footer>
+  <div class="footer-header">
+    <div class="logo-div">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="social-media-div">
+      <a href="/"><img src="images/icon-facebook.svg" alt=""></a>
+      <a href="/"><img src="images/icon-twitter.svg" alt=""></a>
+      <a href=""><img src="images/icon-pinterest.svg" alt=""></a>
+      <a href="/"><img src="images/icon-instagram.svg" alt=""></a>
+    </div>
+  </div>
+
+  <div class="lists-div">
+    <div class="lists">
+      <h3> Our company</h3>
+      <ul class="footer-lists">
+        <li><a href="#"> How we work</a></li>
+        <li><a href="#"> Why Insure?</a></li>
+        <li><a href="#"> View plans</a></li>
+        <li><a href="#"> Reviews</a></li>
+      </ul>
+    </div>
+    <div class="lists">
+      <h3> Help me</h3>
+      <ul class="footer-lists">
+        <li><a href="/"> FAQ</a></li>
+        <li><a href="/"> Terms of use</a></li>
+        <li><a href="/"> Privacy policy</a></li>
+        <li><a href="/"> Cookies</a></li>
+      </ul>
+    </div>
+    <div class="lists">
+      <h3> Contact</h3>
+      <ul class="footer-lists">
+        <li><a href="/"> Sales</a></li>
+        <li><a href="/"> Support</a></li>
+        <li><a href="/"> Live chat</a></li>
+        <li><a href="/"></a></li>
+      </ul>
+    </div>
+    <div class="lists">
+      <h3> Others</h3>
+      <ul class="footer-lists">
+        <li><a href="/"> Careers</a></li>
+        <li><a href="/"> Press</a></li>
+        <li><a href="/"> Licenses</a></li>
+        <li><a href="/"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  <script>
+     const toggleButton = document.getElementById("toggle-Button");
+     const navList = document.getElementById("nav-List");
+
+    toggleButton.addEventListener ( 'click', function() {
+       navList.classList.toggle('active');
+    });
+  </script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Engrnoble">Michael Sunday</a>.
+  </div>
+</body>
+</html>
