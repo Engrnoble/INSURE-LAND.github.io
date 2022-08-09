@@ -11,7 +11,8 @@ body {
 
 html {
     font-size: 16px;
-    font-family: cursive;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 /* The Header of the page */
 .navbar {
